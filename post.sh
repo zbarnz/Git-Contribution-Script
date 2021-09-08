@@ -3,7 +3,7 @@
 FILEONE=./one.txt
 FILETWO=./two.txt
 
-if test -f "$FILEONE"; then
+if [-f "$FILEONE"]; then
   mv one.txt two.txt
   echo "1"
 fi
