@@ -1,0 +1,22 @@
+{
+  "name": "github_commit_script",
+  "version": "1.0.0",
+  "description": "A script that gives you free contributions",
+  "main": "post.sh",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "cheat": "bash ./post.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zbarnz/Private-Script-Tests.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zbarnz/Private-Script-Tests/issues"
+  },
+  "homepage": "https://github.com/zbarnz/Private-Script-Tests#readme"
+}
