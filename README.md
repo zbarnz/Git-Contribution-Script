@@ -8,7 +8,7 @@ This is a bash script that pushes fake commits to github, giving you that cool g
 so excited about. This script allows you to selects how many commits you want to push each time you run it. EMPLOYERS HATE THIS!!!
 
 ## Setup
-  1. Sign into GitHub through the Bash terminal.
+  1. Sign into GitHub through the Bash terminal (if you are not already).
   2. Clone this repository locally.
   3. Push to your own GitHub repository.
   
