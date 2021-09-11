@@ -20,11 +20,11 @@ if [[ $number -gt 0 ]]; then
     mv one.txt two.txt
   fi
 
-  git add . 
+  git add . > /dev/null 2>&1
 
-  git commit -m "commit" 
+  git commit -m "commit" > /dev/null 2>&1
 
-  git push origin master
+  git push origin master > /dev/null 2>&1
 
   ((counter++))
 
@@ -32,9 +32,7 @@ if [[ $number -gt 0 ]]; then
 
 else
 
-echo -e "\e[33mNumber Cannot be less than 0"
+echo -e "\e[31mNumber Cannot be less than 0"
 exec "$ScriptRestart"
 
 fi
-
-echo not crashed
