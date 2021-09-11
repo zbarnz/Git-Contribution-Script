@@ -1,7 +1,7 @@
 ### NOTE: 
 **This will not work if this repository is forked. You must clone the repository and push that to GitHub.**
 This is because GitHub considers forked repositories to be a temporary workspace to be used before merging
-commits to a main repository.
+commits to a main repository. Therefore, commits are not counted as contributions.
 
 ## About
 This is a bash script that pushes fake commits to GitHub, giving you that cool green square everyone is
