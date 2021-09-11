@@ -13,7 +13,7 @@ counter=1
 
 if [[ $number =~ $NumTest && $number -gt 0 ]]; then
 
-  echo -e -n "\e[34mPLEASE WAIT... "
+  echo -e -n "\e[34mPLEASE WAIT... \r"
 
   while [ $counter -le $number ]
   do
