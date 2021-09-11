@@ -2,24 +2,39 @@
 #!/bin/bash
 
 FILETWO=./two.txt
-echo "$FILETWO"
+ScriptRestart=$(readlink -f "$0")
+
+echo -e "\e[33mEnter ammount of contributions:"
+read number
 
 counter=1
-while [ $counter -le 100 ]
-do
 
-if test -f "$FILETWO"; then
-  mv two.txt one.txt
+if [[ $number -gt 0 ]]; then
+
+  while [ $counter -le $number ]
+  do
+
+  if test -f "$FILETWO"; then
+    mv two.txt one.txt
+  else
+    mv one.txt two.txt
+  fi
+
+  git add . 
+
+  git commit -m "commit" 
+
+  git push origin master
+
+  ((counter++))
+
+  done
+
 else
-  mv one.txt two.txt
+
+echo -e "\e[33mNumber Cannot be less than 0"
+exec "$ScriptRestart"
+
 fi
 
-git add . 
-
-git commit -m "commit" 
-
-git push origin master
-
-((counter++))
-
-done
+echo not crashed
