@@ -3,13 +3,14 @@
 
 FILETWO=./two.txt
 ScriptRestart=$(readlink -f "$0")
+NumTest='^[0-9]+$'
 
-echo -e "\e[33mEnter ammount of contributions:"
+echo -e -n "\e[33mEnter ammount of contributions: "
 read number
 
 counter=1
 
-if [[ $number -gt 0 ]]; then
+if [[ $number =~ $NumTest && $number -gt 0 ]]; then
 
   while [ $counter -le $number ]
   do
@@ -26,13 +27,15 @@ if [[ $number -gt 0 ]]; then
 
   git push origin master > /dev/null 2>&1
 
+  echo "$counter"
+
   ((counter++))
 
   done
 
 else
 
-echo -e "\e[31mNumber Cannot be less than 0"
+echo -e "\e[31mINVALID ENTRY"
 exec "$ScriptRestart"
 
 fi
