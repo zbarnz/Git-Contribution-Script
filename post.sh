@@ -4,6 +4,8 @@
 FILETWO=./two.txt
 ScriptRestart=$(readlink -f "$0")
 NumTest='^[0-9]+$'
+i=1
+sp="/-\|"
 
 echo -e -n "\e[33mEnter ammount of contributions: "
 read number
@@ -27,7 +29,7 @@ if [[ $number =~ $NumTest && $number -gt 0 ]]; then
 
   git push origin master > /dev/null 2>&1
 
-  echo "$counter"
+  printf "\b${sp:i++%${#sp}:1}"
 
   ((counter++))
 
