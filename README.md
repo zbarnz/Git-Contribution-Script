@@ -5,7 +5,7 @@ commits to a main repository.
 
 ## About
 This is a bash script that pushes fake commits to github, giving you that cool green square everyone is
-so excited about. This script allows you to selects how many commits you want to push each time you run it. **EMPLOYERS HATE THIS!!!**
+so excited about. This script allows you to select how many commits you want to push each time you run it. **EMPLOYERS HATE THIS!!!**
 
 ## Setup
   1. Sign into GitHub through the Bash terminal (if you are not already).
