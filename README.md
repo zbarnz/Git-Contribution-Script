@@ -4,7 +4,7 @@ This is because GitHub considers forked repositories to be a temporary workspace
 commits to a main repository.
 
 ## About
-This is a bash script that pushes fake commits to github, giving you that cool green square everyone is
+This is a bash script that pushes fake commits to GitHub, giving you that cool green square everyone is
 so excited about. This script allows you to input how many commits you want to push each time you run it. **EMPLOYERS HATE THIS!!!**
 
 ## Setup
