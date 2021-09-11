@@ -34,6 +34,7 @@ if [[ $number =~ $NumTest && $number -gt 0 ]]; then
 
   done
 
+  echo -en "\b\b\b\b\b\b\b\b\b"
   echo -e "\e[32mCOMPLETED"
 
 else
