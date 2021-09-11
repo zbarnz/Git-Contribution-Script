@@ -6,14 +6,14 @@ ScriptRestart=$(readlink -f "$0")
 NumTest='^[0-9]+$'
 
 
-echo -e -n "\e[33mEnter ammount of contributions: "
+echo -ne "\e[33mEnter ammount of contributions: "
 read number
 
 counter=1
 
 if [[ $number =~ $NumTest && $number -gt 0 ]]; then
 
-  echo -e -n "\e[34mPLEASE WAIT... \r"
+  echo -ne "\e[34mPLEASE WAIT... \r"
 
   while [ $counter -le $number ]
   do
