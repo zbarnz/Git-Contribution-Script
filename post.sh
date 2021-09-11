@@ -13,7 +13,7 @@ counter=1
 
 if [[ $number =~ $NumTest && $number -gt 0 ]]; then
 
-  echo -ne "\e[34mPLEASE WAIT... \r"
+  printf "\e[34mPLEASE WAIT... \r"
 
   while [ $counter -le $number ]
   do
@@ -34,7 +34,7 @@ if [[ $number =~ $NumTest && $number -gt 0 ]]; then
 
   done
 
-  echo -en "\b\b\b\b\b\b\b\b\b"
+  printf "\r%b" "\033[2K"
   echo -e "\e[32mCOMPLETED"
 
 else
