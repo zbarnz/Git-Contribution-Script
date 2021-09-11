@@ -1,6 +1,6 @@
 ### NOTE: 
 **This will not work if this repository is forked. You must clone the repository and push that to GitHub.**
-This is because GitHub considers forked repositories to be a temporary workspace to be used before pushing
+This is because GitHub considers forked repositories to be a temporary workspace to be used before merging
 commits to a main repository.
 
 ## Setup
