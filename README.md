@@ -5,7 +5,7 @@ commits to a main repository. Therefore, commits are not counted as contribution
 
 ## About
 This is a bash script that pushes fake commits to GitHub, giving you that cool green square everyone is
-so excited about. This script allows you to input how many commits you want to push each time you run it. **EMPLOYERS HATE THIS!!!**
+so excited about. This script allows you to input how many commits you want to push each time you run it. **EMPLOYERS HATE THIS ONE SIMPLE TRICK!!!**
 
 ## Setup
   1. Sign into GitHub through the Bash terminal (if you are not already).
